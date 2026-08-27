@@ -15,8 +15,8 @@ class Program
         Console.Write("Indtast pris pr. enhed: ");
         decimal unitPrice = Convert.ToDecimal(Console.ReadLine());
 
-        Console.WriteLine($"Vare: {productName}");
-        Console.WriteLine($"Antal: {quantity}");
-        Console.WriteLine($"Pris pr. enhed: {unitPrice:F2} kr.");
+        decimal lineTotal = quantity * unitPrice;
+
+        Console.WriteLine($"{productName}: {quantity} stk. à {unitPrice:F2} kr. = {lineTotal:F2} kr.");
     }
 }
