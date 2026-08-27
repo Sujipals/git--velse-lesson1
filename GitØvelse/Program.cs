@@ -1,1 +1,1 @@
-﻿Console.WriteLine("I am learning Git and C#.");
+﻿Console.WriteLine("Hello from Person A!");
